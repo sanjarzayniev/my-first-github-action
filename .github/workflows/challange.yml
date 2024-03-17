@@ -22,9 +22,12 @@ jobs:
                         - name: Print the date
                           run: Date
         job4:
+                needs: [job1, job2, job3]
                 name: Fourth job
                 runs-on: ubuntu-latest
                 steps:
                         - name: Print the date in second ubuntu
                           run: date
-                needs: [job1, job2, job3]
+                        - name: Python Syntax Checker
+                          uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
+          
