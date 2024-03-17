@@ -1,0 +1,33 @@
+name: challange
+
+on: push
+
+jobs: 
+        job1:
+                name: First job
+                runs-on: ubuntu-latest
+                steps:
+                        - name: Print the date
+                          uses: actions/checkout@v2
+                          run: date
+        job2: 
+                name: Second job
+                runs-on: windows-latest
+                steps: 
+                        - name: Print the date
+                          uses: actions/checkout@v2
+                          run: date /t
+        job3:
+                name: Third job
+                runs-on: macos-latest
+                steps:
+                        - name: Print the date
+                          uses: actions/checkout@v2
+                          run: Date
+        job4:
+                name: Fourth job
+                runs-on: ubuntu-latest
+                steps:
+                        - name: Print the date
+                          uses: actions/checkout@v2
+                          run: date
