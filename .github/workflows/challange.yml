@@ -27,3 +27,4 @@ jobs:
                 steps:
                         - name: Print the date in second ubuntu
                           run: date
+                needs: [job1, job2, job3]
