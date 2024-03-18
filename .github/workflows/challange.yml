@@ -2,7 +2,7 @@ name: challange
 
 on:
         schedule:
-                - cron: '45 12 * * *'
+                - cron: '52 17 * * *'
 
 jobs: 
         job1:
