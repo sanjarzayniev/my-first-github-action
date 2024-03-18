@@ -2,7 +2,7 @@ name: challange
 
 on:
         schedule:
-                - cron: '40 12 * * *'
+                - cron: '45 12 * * *'
 
 jobs: 
         job1:
@@ -32,4 +32,3 @@ jobs:
                           run: date
                         - name: Python Syntax Checker
                           uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
-          
