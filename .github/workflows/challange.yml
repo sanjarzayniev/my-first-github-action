@@ -1,8 +1,9 @@
 name: challange
 
 on:
-        schedule:
-                - cron: '52 17 * * *'
+        # schedule:
+        #         - cron: '52 17 * * *'
+        push
 
 jobs: 
         job1:
